@@ -1,0 +1,66 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        'plugin:@typescript-eslint/recommended',
+        "prettier",
+        "standard"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "NodeJS": true,
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "indent": ["error", 4, {
+            "SwitchCase": 1
+        }],
+        "space-before-function-paren": ["error", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+        }]
+    },
+    "overrides": [{
+            "files": ["src/apollo/generated/types.ts"],
+            "rules": {
+                "no-unused-vars": "off",
+                "no-use-before-define": "off",
+                "no-undef": "off",
+                "@typescript-eslint/no-explicit-any": "off",
+                "@typescript-eslint/ban-types": "off"
+            }
+        },
+        {
+            "files": ["*.graphql"],
+            "parser": "@graphql-eslint/eslint-plugin",
+            "plugins": ["@graphql-eslint"],
+            "rules": {
+                "@graphql-eslint/known-type-names": "error"
+            }
+        },
+        {
+            "files": ["**.ts", "*.tsx"],
+            "rules": {
+                "@typescript-eslint/no-var-requires": "off",
+                "@typescript-eslint/no-explicit-any": "off",
+                "no-unused-vars": "off",
+                "no-mixed-spaces-and-tabs": "off",
+                "no-tabs": "off",
+                "@typescript-eslint/no-unused-vars": "off"
+            }
+        }
+    ]
+}

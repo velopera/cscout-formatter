@@ -1,0 +1,62 @@
+{
+    "usb_reader": [
+        "sys.exit",
+        "usb_reader.read_from_serial",
+        "<builtin>.len",
+        "<builtin>.print"
+    ],
+    "usb_reader.get_log_filename": [
+        "time.localtime",
+        "time.strftime"
+    ],
+    "time.localtime": [],
+    "time.strftime": [],
+    "usb_reader.write_log": [
+        "<builtin>.open"
+    ],
+    "<builtin>.open": [],
+    "usb_reader.read_from_serial": [
+        "matplotlib.pyplot.ion",
+        "serial.Serial.read",
+        "json.dumps",
+        "serial.Serial",
+        "os.path.join",
+        "matplotlib.pyplot.pause",
+        "serial.Serial.close",
+        "serial.Serial.read.decode",
+        "json.loads",
+        "usb_reader.write_log",
+        "matplotlib.pyplot.draw",
+        "usb_reader.get_log_filename",
+        "os.makedirs",
+        "os.path.exists",
+        "matplotlib.pyplot.subplots",
+        "matplotlib.dates.DateFormatter",
+        "json.loads.get",
+        "datetime.datetime.now",
+        "matplotlib.dates.AutoDateLocator",
+        "<builtin>.print",
+        "datetime.datetime.now.strftime"
+    ],
+    "os.path.exists": [],
+    "os.makedirs": [],
+    "os.path.join": [],
+    "matplotlib.pyplot.ion": [],
+    "matplotlib.pyplot.subplots": [],
+    "serial.Serial": [],
+    "<builtin>.print": [],
+    "serial.Serial.read": [],
+    "serial.Serial.read.decode": [],
+    "json.loads": [],
+    "json.dumps": [],
+    "datetime.datetime.now": [],
+    "datetime.datetime.now.strftime": [],
+    "json.loads.get": [],
+    "matplotlib.dates.DateFormatter": [],
+    "matplotlib.dates.AutoDateLocator": [],
+    "matplotlib.pyplot.draw": [],
+    "matplotlib.pyplot.pause": [],
+    "serial.Serial.close": [],
+    "<builtin>.len": [],
+    "sys.exit": []
+}
