@@ -1,5 +1,5 @@
 {
-  "name": "pycg_to_graphviz",
+  "name": "cscout-formatter",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
